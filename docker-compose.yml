@@ -1,0 +1,15 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: finger-counter-env:latest
+    container_name: finger-counter
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    ports:
+      - "8888:8888"
+    gpus: all
+    tty: true
+    stdin_open: true

@@ -1,1 +1,6 @@
 /venv/
+data/fingers
+data/test
+data/train
+data/train_clean
+data/val
